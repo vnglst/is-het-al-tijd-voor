@@ -41,8 +41,9 @@ const getPriceInfo = async (url, productId) => {
   const productInfo = await getProductInfo(url, productId)
   return {
     price: productInfo.priceLabel.now,
+    oldPrice: productInfo.priceLabel.was,
     unit: productInfo.unitSize,
-    availability: productInfo.availability
+    availability: productInfo.availability.orderable
   }
 }
 
