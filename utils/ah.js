@@ -1,6 +1,7 @@
-import fetch from 'isomorphic-unfetch'
+
 import urlTools from 'url'
 import { map, has, flatten } from 'lodash'
+import fetch from './fetch'
 
 /*
   Deep search an object for a certain key
@@ -26,7 +27,7 @@ const getJSON = async url => {
   if (response.status >= 400) {
     throw new Error('Bad response from server')
   }
-  return response.json()
+  return response
 }
 
 const getProductInfo = async (url, productId) => {

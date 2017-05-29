@@ -1,8 +1,12 @@
-const ah = require('../utils/ah.js')
+import Link from 'next/link'
+import ah from '../utils/ah.js'
 
 const Post = (props) => {
   return (
     <div>
+      <ul>
+        <li><Link href='/' as='/'><a>home</a></Link></li>
+      </ul>
       <h1>Ja,</h1><span>en bij de AH kosten ze momenteel {props.priceInfo.price}</span>
     </div>
   )

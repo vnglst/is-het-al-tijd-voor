@@ -4,6 +4,8 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js"
   },
+  "name": "is-het-al-tijd-voor",
+  "version" : "0.0.1",
   "dependencies": {
     "express": "^4.14.0",
     "isomorphic-unfetch": "^1.0.0",
