@@ -5,7 +5,7 @@ const Yes = ({ price, unit }) => {
   if (price <= 3.0) {
     return (
       <div>
-        <h1>Ja,</h1><span>en bji de AH zijn ze ook nog wel te betalen: € {price} per {unit}</span>
+        <h1>Ja,</h1><span>en bij de AH zijn ze ook nog wel te betalen: € {price} per {unit}</span>
       </div>
     )
   }
